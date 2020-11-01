@@ -5,7 +5,7 @@ namespace afzm {
 
 
 const std::vector<Temperature_Type::System> Temperature_Type::systems_ = {System::None};
-const std::vector<Temperature_Type::Type> Temperature_Type::types_ = {Type::Celsius, Type::Kelvin, Type::Fahrenheit, Type::Rankine,
+const std::vector<Temperature_Type::Type> Temperature_Type::all_types_ = {Type::Celsius, Type::Kelvin, Type::Fahrenheit, Type::Rankine,
                                                                 Type::Delisle, Type::Newton, Type::Reaumur, Type::Romer};
 const std::vector<Temperature_Type::Prefix> Temperature_Type::prefixes_ = {Prefix::None};
 
@@ -61,7 +61,7 @@ Temperature_Type::System Temperature_Type::getSystemEnum()
 
 Temperature_Type::Type Temperature_Type::getTypeEnum(const std::string& name)
 {
-    for(const auto& type: types_){
+    for(const auto& type: all_types_){
         if (name == getTypeName(type)){
             return type;
         }

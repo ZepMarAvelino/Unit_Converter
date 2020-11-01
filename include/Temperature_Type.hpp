@@ -32,7 +32,7 @@ struct Temperature_Type{
     /**
      * @brief Vector that holds the units of the Type enum class. Used for iterating through the enum if needed.
      */
-    static const std::vector<Type> types_;
+    static const std::vector<Type> all_types_;
     /**
      * @brief Vector that holds the members of the Prefix enum class. Used for iterating through the enum if needed.
      */

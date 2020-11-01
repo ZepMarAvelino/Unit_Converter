@@ -31,9 +31,6 @@ std::string Measurement_Type::getMeasurementName(Measurement_Type::Measurement m
 
 Measurement_Type::Measurement Measurement_Type::getMeasurementEnum(const std::string& name)
 {
-//    for(auto& character: name){
-//        character = std::tolower(character);
-//    }
 
     for(const auto& measurement: measurement_){
         if (name == getMeasurementName(measurement)){

@@ -66,6 +66,11 @@ struct Area_Type{
      * @brief Vector that holds the us customary units of the Type enum class. Used for iterating through the enum if needed.
      */
     static const std::vector<Type> us_types_;
+    
+    /**
+     * @brief Vector that holds all the units of the Type enum class. Used for iterating through the enum if needed.
+     */
+    static const std::vector<Type> all_types_;
 
     /**
      * @brief Vector that holds the members of the Prefix enum class. Used for iterating through the enum if needed.

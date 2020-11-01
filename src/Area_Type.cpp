@@ -2,6 +2,8 @@
 
 namespace afzm{
 
+
+//Definition of the const static vectors
 const std::vector<Area_Type::System> Area_Type::systems_ {System::None, System::Metric, System::Imperial, System::US_Customary};
 const std::vector<Area_Type::Type> Area_Type::metric_types_ {Type::Metre_Square, Type::Fermi_Square, Type::Angstrom_Square, Type::Micron_Square,
                             Type::Myriametre_Square, Type::X_Unit_Square, Type::Hectare};
@@ -11,6 +13,14 @@ const std::vector<Area_Type::Type> Area_Type::imperial_types_ {Type::Point_Squar
 const std::vector<Area_Type::Type> Area_Type::us_types_ {Type::Survey_Link_Square, Type::Survey_Inch_Square, Type::Survey_Foot_Square, Type::Rod_Square,
                                Type::Survey_Chain_Square, Type::Survey_Furlong_Square, Type::Section, Type::Survey_League_Square,
                                Type::Survey_Acre, Type::Survey_Township};
+const std::vector<Area_Type::Type> Area_Type::all_types_ {Type::Metre_Square, Type::Fermi_Square, Type::Angstrom_Square, Type::Micron_Square,
+                            Type::Myriametre_Square, Type::X_Unit_Square, Type::Hectare,
+                            Type::Point_Square, Type::Pica_Square, Type::Thou_Square, Type::Inch_Square,
+                            Type::Foot_Square, Type::Yard_Square, Type::Chain_Square, Type::Furlong_Square,
+                            Type::Mile_Square, Type::League_Square, Type::Rood, Type::Acre,
+                            Type::Survey_Link_Square, Type::Survey_Inch_Square, Type::Survey_Foot_Square, Type::Rod_Square,
+                            Type::Survey_Chain_Square, Type::Survey_Furlong_Square, Type::Section, Type::Survey_League_Square,
+                            Type::Survey_Acre, Type::Survey_Township};
 const std::vector<Area_Type::Prefix> Area_Type::prefixes_ {Prefix::None, Prefix::yocto, Prefix::zepto, Prefix::atto, Prefix::femto,
                         Prefix::pico, Prefix::nano, Prefix::micro, Prefix::milli, Prefix::centi, Prefix::deci, Prefix::deca,
                         Prefix::hecto, Prefix::kilo, Prefix::mega, Prefix::giga, Prefix::tera, Prefix::peta, Prefix::exa,
@@ -390,7 +400,6 @@ Area_Type::Type Area_Type::getTypeEnum(const std::string& name)
 
 Area_Type::Prefix Area_Type::getPrefixEnum(const std::string& name)
 {
-
     for(const auto& prefix: prefixes_){
         if (name == getPrefixName(prefix)){
             return prefix;

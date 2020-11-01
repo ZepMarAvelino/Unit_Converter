@@ -77,12 +77,18 @@ struct Volume_Type{
     static const std::vector<Type> us_types_;
 
     /**
+     * @brief Vector that holds all the units of the Type enum class. Used for iterating through the enum if needed.
+     */
+    static const std::vector<Type> all_types_;
+
+    /**
      * @brief Vector that holds the members of the Prefix enum class. Used for iterating through the enum if needed.
      */
     static const std::vector<Prefix> prefixes_;
 
 
-    //Methods
+    //************Methods********************
+
 
     /**
      * @brief Get the name of the type of unit

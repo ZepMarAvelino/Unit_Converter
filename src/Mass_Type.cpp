@@ -7,6 +7,10 @@ const std::vector<Mass_Type::Type> Mass_Type::metric_types_ = {Type::Gram, Type:
 const std::vector<Mass_Type::Type> Mass_Type::imperial_types_ = {Type::Grain, Type::Drachm, Type::Ounce, Type::Pound, Type::Stone, Type::Quarter,
                                     Type::Hundredweight, Type::Ton};
 const std::vector<Mass_Type::Type> Mass_Type::us_types_ = {Type::Dram, Type::US_Hundredweight, Type::US_Ton, Type::Pennyweight, Type::Troy_Ounce, Type::Troy_Pound};
+const std::vector<Mass_Type::Type> Mass_Type::all_types_ = {Type::Gram, Type::Tonne, Type::Carat,
+                                    Type::Grain, Type::Drachm, Type::Ounce, Type::Pound, Type::Stone, Type::Quarter,
+                                    Type::Hundredweight, Type::Ton,
+                                    Type::Dram, Type::US_Hundredweight, Type::US_Ton, Type::Pennyweight, Type::Troy_Ounce, Type::Troy_Pound};
 const std::vector<Mass_Type::Prefix> Mass_Type::prefixes_ = {Prefix::None, Prefix::yocto, Prefix::zepto, Prefix::atto, Prefix::femto, Prefix::pico, Prefix::nano,
                                  Prefix::micro, Prefix::milli, Prefix::centi, Prefix::deci, Prefix::deca, Prefix::hecto, Prefix::kilo,
                                                        Prefix::mega, Prefix::giga, Prefix::tera, Prefix::peta, Prefix::exa, Prefix::zetta, Prefix::yotta};

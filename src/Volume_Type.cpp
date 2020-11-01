@@ -15,6 +15,18 @@ const std::vector<Volume_Type::Type> Volume_Type::us_types_ = {Type::Survey_Link
                                Type::US_Bushel, Type::Dry_Barrel, Type::Minim, Type::US_Fluid_Dram, Type::Teaspoon, Type::Tablespoon,
                                Type::Fluid_Ounce, Type::US_Shot, Type::US_Gill, Type::US_Cup, Type::US_Pint, Type::US_Quart, Type::US_Pottle,
                                Type::US_Gallon, Type::Barrel, Type::Oil_Barrel, Type::Hogshead};
+const std::vector<Volume_Type::Type> Volume_Type::all_types_ = {Type::Metre_Cubic, Type::Litre, Type::Fermi_Cubic, Type::Angstrom_Cubic, Type::Micron_Cubic,
+                                    Type::Myriametre_Cubic, Type::X_Unit_Cubic,
+                                    Type::Point_Cubic, Type::Pica_Cubic, Type::Thou_Cubic, Type::Inch_Cubic,
+                                    Type::Foot_Cubic, Type::Yard_Cubic, Type::Chain_Cubic, Type::Furlong_Cubic,
+                                    Type::Mile_Cubic, Type::League_Cubic, Type::Fluid_Ounce, Type::Gill,
+                                    Type::Pint, Type::Quart, Type::Gallon, Type::Bushel, Type::Quarter,
+                                    Type::Survey_Link_Cubic, Type::Survey_Inch_Cubic, Type::Survey_Foot_Cubic, Type::Rod_Cubic,
+                                    Type::Survey_Chain_Cubic, Type::Survey_Furlong_Cubic, Type::Survey_Mile_Cubic, Type::Survey_League_Cubic,
+                                    Type::Survey_Acre_Foot, Type::US_Dry_Pint, Type::US_Dry_Quart, Type::US_Dry_Gallon, Type::Peck,
+                                    Type::US_Bushel, Type::Dry_Barrel, Type::Minim, Type::US_Fluid_Dram, Type::Teaspoon, Type::Tablespoon,
+                                    Type::Fluid_Ounce, Type::US_Shot, Type::US_Gill, Type::US_Cup, Type::US_Pint, Type::US_Quart, Type::US_Pottle,
+                                    Type::US_Gallon, Type::Barrel, Type::Oil_Barrel, Type::Hogshead};
 const std::vector<Volume_Type::Prefix> Volume_Type::prefixes_ = {Prefix::None, Prefix::yocto, Prefix::zepto, Prefix::atto, Prefix::femto, Prefix::pico, Prefix::nano,
                                  Prefix::micro, Prefix::milli, Prefix::centi, Prefix::deci, Prefix::deca, Prefix::hecto, Prefix::kilo,
                                                            Prefix::mega, Prefix::giga, Prefix::tera, Prefix::peta, Prefix::exa, Prefix::zetta, Prefix::yotta};

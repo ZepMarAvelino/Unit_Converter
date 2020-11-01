@@ -10,6 +10,12 @@ const std::vector<Length_Type::Type> Length_Type::imperial_types_ {Type::Point, 
                                      Type::Nautical_Mile};
 const std::vector<Length_Type::Type> Length_Type::us_types_ {Type::Link, Type::Survey_Inch, Type::Survey_Foot, Type::Rod, Type::Survey_Chain, Type::Survey_Furlong,
                               Type::Survey_Mile, Type::Survey_League};
+const std::vector<Length_Type::Type> Length_Type::all_types_ {Type::Metre, Type::Fermi, Type::Angstrom, Type::Micron, Type::Myriametre, Type::X_Unit,
+                                    Type::Point, Type::Pica, Type::Thou, Type::Inch, Type::Foot, Type::Yard, Type::Chain,
+                                    Type::Furlong, Type::Mile, Type::League, Type::Fathom, Type::Short_Cable, Type::Long_Cable,
+                                    Type::Nautical_Mile,
+                                    Type::Link, Type::Survey_Inch, Type::Survey_Foot, Type::Rod, Type::Survey_Chain, Type::Survey_Furlong,
+                                    Type::Survey_Mile, Type::Survey_League};
 const std::vector<Length_Type::Prefix> Length_Type::prefixes_ {Prefix::None, Prefix::yocto, Prefix::zepto, Prefix::atto, Prefix::femto, Prefix::pico, Prefix::nano,
                                  Prefix::micro, Prefix::milli, Prefix::centi, Prefix::deci, Prefix::deca, Prefix::hecto, Prefix::kilo,
             Prefix::mega, Prefix::giga, Prefix::tera, Prefix::peta, Prefix::exa, Prefix::zetta, Prefix::yotta};
